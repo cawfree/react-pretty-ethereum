@@ -1,4 +1,4 @@
-# react-pretty-web3
+# react-pretty-ethereum
 Tools to render Web3 data models in a user-friendly way, because [**Ethereum**](https://ethereum.org) is complicated enough for outsiders.
 
 The project works in two simple ways:
