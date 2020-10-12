@@ -1,9 +1,30 @@
 # react-pretty-web3
-Render Web3 data models in a user-friendly way. (React/React Native)
+Tools to render Web3 data models in a user-friendly way, because [**Ethereum**](https://ethereum.org) is complicated enough for outsiders.
 
-<p align="center">
-  <img src="./public/alice.png" alt="react-pretty-web3"></img>
-</p>
+The project works in two simple ways:
+  - Firstly, you register mechanisms by which low-level information can be converted into something more useful to an end user.
+    - For instance, you could override an ethereum address to resolve to a user's profile name, if it was known.
+  - Secondly, you declare dedicated [**render props**](https://reactjs.org/docs/render-props.html) capable of handling the processed data.
+
+Supports both [**React**](https://reactjs.org) and [**React Native**](https://reactnative.dev).
+
+## 🚀 Getting Started
+
+Using [**Yarn**](https://yarnpkg.com):
+
+```bash
+yarn add react-pretty-ethereum
+```
+
+## ✍️ Usage
+
+Use the [`<PrettyEthereumProvider`](./src/components/PrettyEthereumProvider/PrettyEthereumProvider.js) to declare ways to process data.
+
+There are two _resolver_ methods used:
+  - We provide a way to convert Ethereum wallet addresses into user names.
+  - Next, there's a simple demonstration of how we could convert transaction values into high-level components.
+
+We create dedicated components to handle these types of resolved transaction keys using the [`createPrettyEthereum`](./src/components/PrettyEthereum/createPrettyEthereum.js) function, which creates a [**Component**](https://reactjs.org/docs/react-component.html) which receives transformed values and renders them via a child render prop.
 
 ```javascript
 import "@formatjs/intl-numberformat/polyfill";
@@ -111,3 +132,12 @@ export default function App() {
   );
 }
 ```
+
+This yields the following result:
+
+<p align="center">
+  <img src="./public/alice.png" alt="react-pretty-web3"></img>
+</p>
+
+## ✌️ License
+[**MIT**](./LICENSE)
