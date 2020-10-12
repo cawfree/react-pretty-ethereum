@@ -1,6 +1,10 @@
 # react-pretty-web3
 Render Web3 data models in a user-friendly way. (React/React Native)
 
+<p align="center">
+  <img src="./public/alice.png" alt="react-pretty-web3"></img>
+</p>
+
 ```javascript
 import "@formatjs/intl-numberformat/polyfill";
 import "@formatjs/intl-numberformat/locale-data/en";
