@@ -1,0 +1,35 @@
+{
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-native": "^0.63.3"
+  },
+  "dependencies": {
+    "deepmerge": "^4.2.2",
+    "react-fast-compare": "^3.2.0",
+    "use-deep-compare-effect": "^1.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/polyfill": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "husky": "^4.3.0",
+    "jest": "^26.5.3",
+    "leasot": "^11.3.0",
+    "prettier": "^2.1.2"
+  },
+  "name": "react-pretty-ethereum",
+  "version": "0.0.1-alpha.0",
+  "description": "Render Web3 data models in a user-friendly way.",
+  "main": "dist",
+  "repository": "https://github.com/cawfree/react-pretty-web3",
+  "author": "Alex Thomas (@cawfree) <hello@cawfree.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "yarn ; babel src --out-dir dist ; rm -rf node_modules"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "@formatjs/intl-numberformat": "^5.6.5",
+    "bignumber.js": "^9.0.1",
+    "ethers": "^5.0.17",
+    "expo": "~39.0.0",
+    "react": "~16.13.0",
+    "react-dom": "~16.13.0",
+    "react-intl": "^5.8.6",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.2.tar.gz",
+    "react-native-web": "0.13.13",
+    "react-pretty-ethereum": "../"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.0"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo web",
+    "eject": "expo eject"
+  },
+  "private": true
+}
